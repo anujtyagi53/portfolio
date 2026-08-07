@@ -175,6 +175,13 @@ img, svg { max-width: 100%; }
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-ghost { background: transparent; color: var(--hero-text); border: 1px solid rgba(255,255,255,0.35); }
 
+.hero-meta a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-meta a:hover { color: #fff; }
+
 .hero-meta {
   display: flex;
   gap: 24px;

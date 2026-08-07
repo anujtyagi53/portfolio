@@ -6,6 +6,9 @@
 <title>Anuj Tyagi — Flutter & Android Developer</title>
 <meta name="description" content="Senior Flutter & Android Developer with 10+ years experience shipping hardware-integrated mobile apps — NFC, BLE, UHF RFID, Nordic DFU.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,7 +31,10 @@
 
 <main>
   <section id="top" class="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
     <div class="hero-inner">
+      <div class="hero-avatar">AT</div>
       <p class="hero-eyebrow">Flutter &amp; Android Developer</p>
       <h1>Anuj Tyagi</h1>
       <p class="hero-lede">
@@ -49,7 +55,7 @@
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <h2 class="section-title">Summary</h2>
     <p class="about-text">
       Senior Mobile Developer (10+ years) specializing in hardware-integrated Flutter apps — NFC, BLE,
@@ -68,61 +74,49 @@
     </div>
   </section>
 
-  <section id="skills" class="section">
+  <section id="skills" class="section reveal">
     <h2 class="section-title">Technical Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Mobile (Flutter)</h3>
+      <div class="skill-card"><div class="skill-icon">📱</div><h3>Mobile (Flutter)</h3>
         <p>Flutter 3.x, Dart 3, null safety, multi-flavor builds (19+), platform channels, isolates, deep linking, mobile + web</p>
       </div>
-      <div class="skill-card">
-        <h3>State Management</h3>
+      <div class="skill-card"><div class="skill-icon">🧩</div><h3>State Management</h3>
         <p>GetX (primary), Provider, Bloc</p>
       </div>
-      <div class="skill-card">
-        <h3>Mobile (Native)</h3>
+      <div class="skill-card"><div class="skill-icon">⚙️</div><h3>Mobile (Native)</h3>
         <p>Android SDK, Kotlin, Java, Jetpack, Retrofit, Coroutines, Gradle, ProGuard/R8</p>
       </div>
-      <div class="skill-card">
-        <h3>Networking</h3>
+      <div class="skill-card"><div class="skill-icon">🌐</div><h3>Networking</h3>
         <p>Dio (interceptors, retries, auth refresh), HTTP, REST, JSON, dartz</p>
       </div>
-      <div class="skill-card">
-        <h3>Hardware &amp; IoT</h3>
+      <div class="skill-card"><div class="skill-icon">📡</div><h3>Hardware &amp; IoT</h3>
         <p>NFC (read/write), BLE, UHF RFID, Nordic DFU firmware updates, barcode/QR, camera, WiFi scan, geolocation</p>
       </div>
-      <div class="skill-card">
-        <h3>Backend &amp; APIs</h3>
+      <div class="skill-card"><div class="skill-icon">☁️</div><h3>Backend &amp; APIs</h3>
         <p>REST integration, Firebase (Auth, Firestore, FCM, Crashlytics, Analytics), SQL</p>
       </div>
-      <div class="skill-card">
-        <h3>Local Storage</h3>
+      <div class="skill-card"><div class="skill-icon">🗄️</div><h3>Local Storage</h3>
         <p>Hive (+ hive_generator), SQLite, SharedPreferences, secure storage</p>
       </div>
-      <div class="skill-card">
-        <h3>UI / UX</h3>
+      <div class="skill-card"><div class="skill-icon">🎨</div><h3>UI / UX</h3>
         <p>Material 3, Cupertino, flutter_svg, fl_chart, graphview, animations, responsive (web + mobile)</p>
       </div>
-      <div class="skill-card">
-        <h3>Media &amp; Docs</h3>
+      <div class="skill-card"><div class="skill-icon">📄</div><h3>Media &amp; Docs</h3>
         <p>PDF generation &amp; viewing, Excel import/export, digital signature capture, video/audio playback</p>
       </div>
-      <div class="skill-card">
-        <h3>Maps &amp; Location</h3>
+      <div class="skill-card"><div class="skill-icon">🗺️</div><h3>Maps &amp; Location</h3>
         <p>Google Maps (mobile + web), geolocation, route plotting</p>
       </div>
-      <div class="skill-card">
-        <h3>Architecture</h3>
+      <div class="skill-card"><div class="skill-icon">🏗️</div><h3>Architecture</h3>
         <p>MVVM, MVC, Clean Architecture, Repository pattern, DI, multi-tenant white-label, Industrial IoT</p>
       </div>
-      <div class="skill-card">
-        <h3>Tooling</h3>
+      <div class="skill-card"><div class="skill-icon">🛠️</div><h3>Tooling</h3>
         <p>Android Studio, VS Code, Git, Gradle, Play Console, App Store Connect, Amazon Appstore</p>
       </div>
     </div>
   </section>
 
-  <section id="experience" class="section">
+  <section id="experience" class="section reveal">
     <h2 class="section-title">Professional Experience</h2>
     <ol class="timeline">
       <li class="timeline-item">
@@ -218,25 +212,25 @@
     </ol>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="section reveal">
     <h2 class="section-title">Key Projects</h2>
     <div class="projects-grid">
-      <div class="project-card"><h3>Arresto Connect</h3><p>Industrial safety platform, 19 white-label flavors (NFC/BLE/RFID/DFU)</p></div>
-      <div class="project-card"><h3>Finance ERP</h3><p>Enterprise ERP built end-to-end in Flutter</p></div>
-      <div class="project-card"><h3>Pansari Direct</h3><p>D2C grocery e-commerce app</p></div>
-      <div class="project-card"><h3>Questionslab Vault</h3><p>Secure assessment app — AES-256, offline-first</p></div>
-      <div class="project-card"><h3>RunPro</h3><p>Task &amp; project management</p></div>
-      <div class="project-card"><h3>Karam Trainee</h3><p>PPE inspection &amp; training verification</p></div>
-      <div class="project-card"><h3>Rate Ur Flight</h3><p>Aviation review &amp; rating</p></div>
-      <div class="project-card"><h3>ECAH</h3><p>Healthcare appointment booking</p></div>
-      <div class="project-card"><h3>Kare (Karam)</h3><p>Workforce &amp; training management</p></div>
-      <div class="project-card"><h3>Cherry Hill</h3><p>Task &amp; project management</p></div>
-      <div class="project-card"><h3>Sandan Grading</h3><p>Karate grading &amp; assessment</p></div>
-      <div class="project-card"><h3>Graavaa</h3><p>Product catalog app</p></div>
+      <div class="project-card"><div class="project-icon">🦺</div><h3>Arresto Connect</h3><p>Industrial safety platform, 19 white-label flavors (NFC/BLE/RFID/DFU)</p></div>
+      <div class="project-card"><div class="project-icon">💼</div><h3>Finance ERP</h3><p>Enterprise ERP built end-to-end in Flutter</p></div>
+      <div class="project-card"><div class="project-icon">🛒</div><h3>Pansari Direct</h3><p>D2C grocery e-commerce app</p></div>
+      <div class="project-card"><div class="project-icon">🔒</div><h3>Questionslab Vault</h3><p>Secure assessment app — AES-256, offline-first</p></div>
+      <div class="project-card"><div class="project-icon">✅</div><h3>RunPro</h3><p>Task &amp; project management</p></div>
+      <div class="project-card"><div class="project-icon">🦺</div><h3>Karam Trainee</h3><p>PPE inspection &amp; training verification</p></div>
+      <div class="project-card"><div class="project-icon">✈️</div><h3>Rate Ur Flight</h3><p>Aviation review &amp; rating</p></div>
+      <div class="project-card"><div class="project-icon">🏥</div><h3>ECAH</h3><p>Healthcare appointment booking</p></div>
+      <div class="project-card"><div class="project-icon">👷</div><h3>Kare (Karam)</h3><p>Workforce &amp; training management</p></div>
+      <div class="project-card"><div class="project-icon">📋</div><h3>Cherry Hill</h3><p>Task &amp; project management</p></div>
+      <div class="project-card"><div class="project-icon">🥋</div><h3>Sandan Grading</h3><p>Karate grading &amp; assessment</p></div>
+      <div class="project-card"><div class="project-icon">🛍️</div><h3>Graavaa</h3><p>Product catalog app</p></div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <h2 class="section-title">Achievements</h2>
     <ul class="achievements">
       <li>Shipped 12 production apps across Play Store, Amazon Appstore, and enterprise channels.</li>
@@ -249,7 +243,7 @@
     <p class="education"><strong>Education:</strong> B.Tech in Computer Science — Uttar Pradesh Technical University, 2013</p>
   </section>
 
-  <section id="contact" class="section contact-section">
+  <section id="contact" class="section contact-section reveal">
     <h2 class="section-title">Get in Touch</h2>
     <p class="contact-lede">Open to Flutter &amp; Android consulting, contract, and full-time roles.</p>
     <div class="contact-links">
@@ -263,6 +257,11 @@
 </main>
 
 <footer class="footer">
+  <div class="footer-social">
+    <a href="mailto:anujtyagi53@gmail.com" aria-label="Email">✉️</a>
+    <a href="https://github.com/anujtyagi53" target="_blank" rel="noopener" aria-label="GitHub">🐙</a>
+    <a href="https://www.linkedin.com/in/anuj-tyagi-b5597b127" target="_blank" rel="noopener" aria-label="LinkedIn">🔗</a>
+  </div>
   <p>© <span id="year"></span> Anuj Tyagi. Built with plain HTML/CSS, hosted on GitHub Pages.</p>
 </footer>
 

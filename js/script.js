@@ -47,6 +47,15 @@ window.addEventListener("scroll", () => {
   backToTop.classList.toggle("visible", window.scrollY > 480);
 });
 
+// Scroll progress bar
+const scrollProgress = document.getElementById("scrollProgress");
+window.addEventListener("scroll", () => {
+  const doc = document.documentElement;
+  const scrollable = doc.scrollHeight - doc.clientHeight;
+  const pct = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+  scrollProgress.style.width = `${pct}%`;
+});
+
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
 

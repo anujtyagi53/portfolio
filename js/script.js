@@ -62,10 +62,12 @@ navLinks.querySelectorAll("a").forEach((link) => {
   });
 });
 
-// Assign a stagger index to repeated chip/tag children so CSS can offset their transition-delay
-document.querySelectorAll(".skills-categories, .more-apps-grid").forEach((group) => {
+// Assign a stagger index to repeated chip/tag children so CSS can offset their transition-delay.
+// Reset the index per group (each skill category, or the more-apps grid) and cap it so the
+// delay never grows unbounded across dozens of items — otherwise later groups take seconds to appear.
+document.querySelectorAll(".skill-category, .more-apps-grid").forEach((group) => {
   group.querySelectorAll(".skill-tag, .more-app-item").forEach((el, i) => {
-    el.style.setProperty("--i", i);
+    el.style.setProperty("--i", Math.min(i, 8));
   });
 });
 

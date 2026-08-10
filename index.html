@@ -16,16 +16,19 @@
 <header class="nav-wrap">
   <nav class="nav">
     <a href="#top" class="nav-brand">AT</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">🌙</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
 </header>
 
@@ -37,13 +40,23 @@
       <div class="hero-avatar">AT</div>
       <p class="hero-eyebrow">Flutter &amp; Android Developer</p>
       <h1>Anuj Tyagi</h1>
+      <p class="hero-role"><span id="roleText">Hardware-Integrated Flutter Apps</span></p>
       <p class="hero-lede">
         Senior Mobile Developer, 10+ years, specializing in hardware-integrated Flutter apps —
-        NFC, BLE, UHF RFID, and Nordic DFU firmware updates. Shipped 12 production apps across
-        Play Store, Amazon Appstore, and enterprise channels.
+        NFC, BLE, UHF RFID, and Nordic DFU firmware updates. Shipped 30+ production apps across
+        Play Store, App Store, and enterprise channels.
       </p>
+      <ul class="tech-chips">
+        <li>NFC</li>
+        <li>BLE</li>
+        <li>UHF RFID</li>
+        <li>Nordic DFU</li>
+        <li>GetX</li>
+        <li>Firebase</li>
+        <li>Dio</li>
+      </ul>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="assets/resume/AnujCV_Updated.pdf" download>Download Résumé</a>
+        <a class="btn btn-primary" href="assets/resume/AnujCV2.pdf" download>Download Résumé</a>
         <a class="btn btn-ghost" href="#contact">Get in Touch</a>
       </div>
       <ul class="hero-meta">
@@ -59,59 +72,111 @@
     <h2 class="section-title">Summary</h2>
     <p class="about-text">
       Senior Mobile Developer (10+ years) specializing in hardware-integrated Flutter apps — NFC, BLE,
-      UHF RFID, and Nordic DFU firmware updates. Shipped 12 production apps across Play Store, Amazon
-      Appstore, and enterprise channels — including a multi-tenant Flutter platform serving 19
+      UHF RFID, and Nordic DFU firmware updates. Shipped 30+ production apps across Play Store, App
+      Store, and enterprise channels — including a multi-tenant Flutter platform serving 19
       white-label client deployments from a single codebase. Domains include FinTech, Healthcare,
       Hospitality, Aviation, and Industrial Safety. Comfortable owning a product end-to-end:
       architecture, native Android (Java/Kotlin) and Flutter, REST integration, Play Console release,
       and post-launch crash and performance ownership.
     </p>
     <div class="stat-row">
-      <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Years experience</span></div>
-      <div class="stat"><span class="stat-num">12</span><span class="stat-label">Shipped apps</span></div>
-      <div class="stat"><span class="stat-num">19</span><span class="stat-label">White-label flavors</span></div>
-      <div class="stat"><span class="stat-num">99%+</span><span class="stat-label">Crash-free rate</span></div>
+      <div class="stat"><span class="stat-icon">🕒</span><span class="stat-num">10+</span><span class="stat-label">Years experience</span></div>
+      <div class="stat"><span class="stat-icon">📦</span><span class="stat-num">30+</span><span class="stat-label">Shipped apps</span></div>
+      <div class="stat"><span class="stat-icon">🏳️</span><span class="stat-num">19</span><span class="stat-label">White-label flavors</span></div>
+      <div class="stat"><span class="stat-icon">✅</span><span class="stat-num">99%+</span><span class="stat-label">Crash-free rate</span></div>
     </div>
   </section>
 
   <section id="skills" class="section reveal">
     <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card"><div class="skill-icon">📱</div><h3>Mobile (Flutter)</h3>
-        <p>Flutter 3.x, Dart 3, null safety, multi-flavor builds (19+), platform channels, isolates, deep linking, mobile + web</p>
+    <div class="skills-categories">
+      <div class="skill-category">
+        <h3>📱 Mobile (Flutter)</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Flutter 3.x</span><span class="skill-tag">Dart 3</span><span class="skill-tag">Null safety</span>
+          <span class="skill-tag">Multi-flavor builds (19+)</span><span class="skill-tag">Platform channels</span>
+          <span class="skill-tag">Isolates</span><span class="skill-tag">Deep linking</span><span class="skill-tag">Mobile + Web</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">🧩</div><h3>State Management</h3>
-        <p>GetX (primary), Provider, Bloc</p>
+      <div class="skill-category">
+        <h3>🧩 State Management</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">GetX</span><span class="skill-tag">Provider</span><span class="skill-tag">Bloc</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">⚙️</div><h3>Mobile (Native)</h3>
-        <p>Android SDK, Kotlin, Java, Jetpack, Retrofit, Coroutines, Gradle, ProGuard/R8</p>
+      <div class="skill-category">
+        <h3>⚙️ Mobile (Native)</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Android SDK</span><span class="skill-tag">Kotlin</span><span class="skill-tag">Java</span>
+          <span class="skill-tag">Jetpack</span><span class="skill-tag">Retrofit</span><span class="skill-tag">Coroutines</span>
+          <span class="skill-tag">Gradle</span><span class="skill-tag">ProGuard/R8</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">🌐</div><h3>Networking</h3>
-        <p>Dio (interceptors, retries, auth refresh), HTTP, REST, JSON, dartz</p>
+      <div class="skill-category">
+        <h3>🌐 Networking</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Dio (interceptors, retries, auth refresh)</span><span class="skill-tag">HTTP</span>
+          <span class="skill-tag">REST</span><span class="skill-tag">JSON</span><span class="skill-tag">dartz</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">📡</div><h3>Hardware &amp; IoT</h3>
-        <p>NFC (read/write), BLE, UHF RFID, Nordic DFU firmware updates, barcode/QR, camera, WiFi scan, geolocation</p>
+      <div class="skill-category">
+        <h3>📡 Hardware &amp; IoT</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">NFC (read/write)</span><span class="skill-tag">BLE</span><span class="skill-tag">UHF RFID</span>
+          <span class="skill-tag">Nordic DFU</span><span class="skill-tag">Barcode/QR</span><span class="skill-tag">Camera</span>
+          <span class="skill-tag">WiFi scan</span><span class="skill-tag">Geolocation</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">☁️</div><h3>Backend &amp; APIs</h3>
-        <p>REST integration, Firebase (Auth, Firestore, FCM, Crashlytics, Analytics), SQL</p>
+      <div class="skill-category">
+        <h3>☁️ Backend &amp; APIs</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">REST integration</span><span class="skill-tag">Firebase Auth</span>
+          <span class="skill-tag">Firestore</span><span class="skill-tag">FCM</span><span class="skill-tag">Crashlytics</span>
+          <span class="skill-tag">Analytics</span><span class="skill-tag">SQL</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">🗄️</div><h3>Local Storage</h3>
-        <p>Hive (+ hive_generator), SQLite, SharedPreferences, secure storage</p>
+      <div class="skill-category">
+        <h3>🗄️ Local Storage</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Hive</span><span class="skill-tag">hive_generator</span><span class="skill-tag">SQLite</span>
+          <span class="skill-tag">SharedPreferences</span><span class="skill-tag">Secure storage</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">🎨</div><h3>UI / UX</h3>
-        <p>Material 3, Cupertino, flutter_svg, fl_chart, graphview, animations, responsive (web + mobile)</p>
+      <div class="skill-category">
+        <h3>🎨 UI / UX</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Material 3</span><span class="skill-tag">Cupertino</span><span class="skill-tag">flutter_svg</span>
+          <span class="skill-tag">fl_chart</span><span class="skill-tag">graphview</span><span class="skill-tag">Animations</span>
+          <span class="skill-tag">Responsive (web + mobile)</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">📄</div><h3>Media &amp; Docs</h3>
-        <p>PDF generation &amp; viewing, Excel import/export, digital signature capture, video/audio playback</p>
+      <div class="skill-category">
+        <h3>📄 Media &amp; Docs</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">PDF generation &amp; viewing</span><span class="skill-tag">Excel import/export</span>
+          <span class="skill-tag">Digital signature capture</span><span class="skill-tag">Video/audio playback</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">🗺️</div><h3>Maps &amp; Location</h3>
-        <p>Google Maps (mobile + web), geolocation, route plotting</p>
+      <div class="skill-category">
+        <h3>🗺️ Maps &amp; Location</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Google Maps (mobile + web)</span><span class="skill-tag">Geolocation</span><span class="skill-tag">Route plotting</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">🏗️</div><h3>Architecture</h3>
-        <p>MVVM, MVC, Clean Architecture, Repository pattern, DI, multi-tenant white-label, Industrial IoT</p>
+      <div class="skill-category">
+        <h3>🏗️ Architecture</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MVVM</span><span class="skill-tag">MVC</span><span class="skill-tag">Clean Architecture</span>
+          <span class="skill-tag">Repository pattern</span><span class="skill-tag">DI</span>
+          <span class="skill-tag">Multi-tenant white-label</span><span class="skill-tag">Industrial IoT</span>
+        </div>
       </div>
-      <div class="skill-card"><div class="skill-icon">🛠️</div><h3>Tooling</h3>
-        <p>Android Studio, VS Code, Git, Gradle, Play Console, App Store Connect, Amazon Appstore</p>
+      <div class="skill-category">
+        <h3>🛠️ Tooling</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Android Studio</span><span class="skill-tag">VS Code</span><span class="skill-tag">Git</span>
+          <span class="skill-tag">Gradle</span><span class="skill-tag">Play Console</span><span class="skill-tag">App Store Connect</span>
+        </div>
       </div>
     </div>
   </section>
@@ -119,9 +184,9 @@
   <section id="experience" class="section reveal">
     <h2 class="section-title">Professional Experience</h2>
     <ol class="timeline">
-      <li class="timeline-item">
+      <li class="timeline-item is-current">
         <div class="timeline-head">
-          <h3>Freelance Flutter &amp; Android Developer</h3>
+          <h3>Freelance Flutter &amp; Android Developer <span class="current-badge">Current</span></h3>
           <span class="timeline-date">May 2026 – Present</span>
         </div>
         <p class="timeline-org">Self-Employed, Remote · Currently working</p>
@@ -214,26 +279,84 @@
 
   <section id="projects" class="section reveal">
     <h2 class="section-title">Key Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card"><div class="project-icon">🦺</div><h3>Arresto Connect</h3><p>Industrial safety platform, 19 white-label flavors (NFC/BLE/RFID/DFU)</p></div>
-      <div class="project-card"><div class="project-icon">💼</div><h3>Finance ERP</h3><p>Enterprise ERP built end-to-end in Flutter</p></div>
-      <div class="project-card"><div class="project-icon">🛒</div><h3>Pansari Direct</h3><p>D2C grocery e-commerce app</p></div>
-      <div class="project-card"><div class="project-icon">🔒</div><h3>Questionslab Vault</h3><p>Secure assessment app — AES-256, offline-first</p></div>
-      <div class="project-card"><div class="project-icon">✅</div><h3>RunPro</h3><p>Task &amp; project management</p></div>
-      <div class="project-card"><div class="project-icon">🦺</div><h3>Karam Trainee</h3><p>PPE inspection &amp; training verification</p></div>
-      <div class="project-card"><div class="project-icon">✈️</div><h3>Rate Ur Flight</h3><p>Aviation review &amp; rating</p></div>
-      <div class="project-card"><div class="project-icon">🏥</div><h3>ECAH</h3><p>Healthcare appointment booking</p></div>
-      <div class="project-card"><div class="project-icon">👷</div><h3>Kare (Karam)</h3><p>Workforce &amp; training management</p></div>
-      <div class="project-card"><div class="project-icon">📋</div><h3>Cherry Hill</h3><p>Task &amp; project management</p></div>
-      <div class="project-card"><div class="project-icon">🥋</div><h3>Sandan Grading</h3><p>Karate grading &amp; assessment</p></div>
-      <div class="project-card"><div class="project-icon">🛍️</div><h3>Graavaa</h3><p>Product catalog app</p></div>
+    <div class="featured-grid">
+      <div class="featured-card">
+        <div class="featured-icon">🦺</div>
+        <h3>Arresto Connect</h3>
+        <p>Multi-tenant industrial safety compliance platform — 19 white-label client flavors from a single Flutter codebase, with NFC, BLE, UHF RFID &amp; Nordic DFU hardware integration.</p>
+        <div class="project-links"><a href="https://apps.apple.com/in/app/arresto-connect/id1540056961" target="_blank" rel="noopener">App Store</a></div>
+      </div>
+      <div class="featured-card">
+        <div class="featured-icon">💼</div>
+        <h3>Finance ERP</h3>
+        <p>Enterprise Finance &amp; ERP platform in Flutter — 22+ feature modules, 43 data models, role-based access control, and real-time dashboards for B2B clients.</p>
+      </div>
+      <div class="featured-card">
+        <div class="featured-icon">🛒</div>
+        <h3>Pansari Direct</h3>
+        <p>D2C grocery e-commerce app built from zero to launch — cart, checkout, payment gateways, GetX/Bloc state management, and deep linking for marketing funnels.</p>
+        <div class="project-links">
+          <a href="https://play.google.com/store/apps/details?id=world.of.mart.app" target="_blank" rel="noopener">Play Store</a>
+          <a href="https://apps.apple.com/in/app/pansari-direct/id1547412856" target="_blank" rel="noopener">App Store</a>
+        </div>
+      </div>
+      <div class="featured-card">
+        <div class="featured-icon">🔒</div>
+        <h3>Questionslab Vault</h3>
+        <p>Secure question-bank and assessment app for educational institutions — client-side AES-256 encryption and full offline-first sync via Hive and background isolates.</p>
+      </div>
+    </div>
+
+    <p class="more-apps-title">More Shipped Apps</p>
+    <div class="more-apps-grid">
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">QRresto</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details?id=app.com.arresto.Qrresto" target="_blank" rel="noopener">Play</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Karam Safety</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details?id=app.com.karamsafety" target="_blank" rel="noopener">Play</a>
+        <a class="mini-link" href="https://apps.apple.com/in/app/karam-safety/id6738165915" target="_blank" rel="noopener">App</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Compass (KStrong)</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details/KStrong_Compass?id=app.com.KStrong" target="_blank" rel="noopener">Play</a>
+        <a class="mini-link" href="https://apps.apple.com/us/app/kstrong-compass/id1496910925" target="_blank" rel="noopener">App</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Karam Trainee</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details?id=com.flashonmind.karamtraining" target="_blank" rel="noopener">Play</a>
+        <a class="mini-link" href="https://apps.apple.com/in/app/karam-training-verification/id6766808958" target="_blank" rel="noopener">App</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Kare (Karam)</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details?id=app.com.KaramDmcc" target="_blank" rel="noopener">Play</a>
+        <a class="mini-link" href="https://apps.apple.com/us/app/kare-karam/id1485861815" target="_blank" rel="noopener">App</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Pansari Group App</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details?id=com.app.MIS.pansari_group" target="_blank" rel="noopener">Play</a>
+        <a class="mini-link" href="https://apps.apple.com/in/app/pansari-group/id6743926428" target="_blank" rel="noopener">App</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Nidan Grading</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details?id=com.nidan.tiska" target="_blank" rel="noopener">Play</a>
+        <a class="mini-link" href="https://apps.apple.com/app/id1040113769" target="_blank" rel="noopener">App</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Sandan Grading</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details?id=com.app.tiskakarate3" target="_blank" rel="noopener">Play</a>
+        <a class="mini-link" href="https://apps.apple.com/app/id1125426794" target="_blank" rel="noopener">App</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Tiska</span>
+        <a class="mini-link" href="https://play.google.com/store/apps/details?id=com.tiska.blackbelt" target="_blank" rel="noopener">Play</a>
+        <a class="mini-link" href="https://apps.apple.com/app/id1213769813" target="_blank" rel="noopener">App</a>
+      </div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">ECAH</span></div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Questionslab CRM</span></div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">RunPro</span></div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Rate Ur Flight</span></div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Cherry Hill</span></div>
+      <div class="more-app-item"><span class="dot"></span><span class="more-app-name">Graavaa</span></div>
     </div>
   </section>
 
   <section class="section reveal">
     <h2 class="section-title">Achievements</h2>
     <ul class="achievements">
-      <li>Shipped 12 production apps across Play Store, Amazon Appstore, and enterprise channels.</li>
+      <li>Shipped 30+ production apps across Play Store, App Store, and enterprise channels.</li>
       <li>Architected a single-codebase multi-tenant platform serving 19 white-label client deployments.</li>
       <li>Shipped production hardware-integrated mobile features in Flutter — NFC, BLE, UHF RFID, and Nordic DFU firmware updates.</li>
       <li>Led a successful native Android → Flutter migration of an enterprise product line, cutting cross-platform development time by ~50%.</li>
@@ -264,6 +387,8 @@
   </div>
   <p>© <span id="year"></span> Anuj Tyagi. Built with plain HTML/CSS, hosted on GitHub Pages.</p>
 </footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
 
 <script src="js/script.js"></script>
 </body>

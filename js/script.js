@@ -23,24 +23,6 @@ themeToggle.addEventListener("click", () => {
   syncThemeIcon();
 });
 
-// Rotating hero role text
-const roleText = document.getElementById("roleText");
-const roles = [
-  "Hardware-Integrated Flutter Apps",
-  "Multi-Tenant White-Label Platforms",
-  "NFC · BLE · UHF RFID · Nordic DFU",
-  "Enterprise Flutter & Android Apps",
-];
-let roleIndex = 0;
-setInterval(() => {
-  roleText.classList.add("fade");
-  setTimeout(() => {
-    roleIndex = (roleIndex + 1) % roles.length;
-    roleText.textContent = roles[roleIndex];
-    roleText.classList.remove("fade");
-  }, 350);
-}, 3200);
-
 // Back to top
 const backToTop = document.getElementById("backToTop");
 window.addEventListener("scroll", () => {

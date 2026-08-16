@@ -703,7 +703,17 @@ main {
 }
 
 .featured-card h3 { margin: 0 0 8px; font-size: 1.2rem; }
-.featured-card p { margin: 0 0 18px; font-size: 0.92rem; color: var(--text-muted); }
+.featured-card p { margin: 0 0 14px; font-size: 0.92rem; color: var(--text-muted); }
+
+.project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.project-tags span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
 
 .project-links { display: flex; gap: 8px; flex-wrap: wrap; }
 .project-links a {
@@ -771,8 +781,14 @@ main {
 }
 .mini-link:hover { color: var(--accent-dark); transform: translateY(-1px); }
 
+.featured-card-wide { grid-column: 1 / -1; }
+
+.featured-card-wide .project-tags,
+.featured-card-wide .project-links { max-width: 640px; }
+
 @media (max-width: 900px) {
   .featured-grid { grid-template-columns: 1fr; }
+  .featured-card-wide { grid-column: auto; }
 }
 
 /* Achievements */
